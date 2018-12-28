@@ -1,0 +1,7 @@
+# Build and tag a docker image for KMS tool.
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'gcr.io/neudesicgcp/kmstool:latest', '-t', 'gcr.io/neudesicgcp/kmstool:$TAG_NAME', '.' ]
+images:
+- 'gcr.io/neudesicgcp/kmstool:$TAG_NAME'
+- 'gcr.io/neudesicgcp/kmstool:latest'

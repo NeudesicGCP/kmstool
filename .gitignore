@@ -1,0 +1,6 @@
+# Don't add vendor directory, if present
+vendor
+
+# Don't add binaries
+kmstool
+kmstool.exe
